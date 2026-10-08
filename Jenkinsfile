@@ -1,13 +1,13 @@
 pipeline{
     agent any
     environment {
-        DOCKER_IMAGE="arundathi23hn/app23"
+        DOCKER_IMAGE="chaithracs/app"
     
     }
     stages{
         stage('clone Repository'){
             steps{
-                git 'https://github.com/arundathi23hn/https://github.com/arundathisimha123-prog/docker.git'
+                git 'https://github.com/chaithracs/https://github.com/chaithracs944-ops/docker.git'
 
             
             }
@@ -30,7 +30,7 @@ pipeline{
                 passwordVariable: 'DOCKER_PASS'
 
             )]){
-                bat 'echo $DOCKER_PASS | docker login -u $arundathi23hn --password-stdin'
+                bat 'echo $DOCKER_PASS | docker login -u $chaithracs --password-stdin'
 
             }
         }
