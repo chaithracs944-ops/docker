@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/chaithracs/app.git'
+                    url: 'https://github.com/chaithracs944-ops/docker.git'
             }
         }
 
